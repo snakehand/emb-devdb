@@ -1,0 +1,11 @@
+[package]
+name = "emb-devdb"
+version = "0.1.0"
+authors = ["Frank A. Stevenson <frank.stevenson@autostoresystem.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.5", features = [ "runtime-tokio-rustls", "sqlite" ] }
+tokio = { version = "1.8.0", features = [ "rt", "macros" ] }
